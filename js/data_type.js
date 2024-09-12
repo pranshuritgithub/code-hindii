@@ -19,3 +19,5 @@ let state;             // undefined
 // object
 
 console.log(typeof "Prashant");
+console.log(typeof undefined);
+console.log(typeof null);
