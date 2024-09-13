@@ -48,3 +48,33 @@ const myFunction = function(){
 }
 
 console.log(typeof heros);
+
+
+//             MEMORY
+// there are two types of memory
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "Prashantjaiswaldotcom"  // ex of stack and stack they have a copy
+
+let anothername =  myYoutubename
+anothername = "coffeewithPrashant"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+let userOne = {                       // ex of heap and heap they have a reference not a copy
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne 
+
+userTwo.email = "Prashant@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
