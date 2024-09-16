@@ -85,3 +85,16 @@ console.log(Object.entries(tinderUser));     // imp
 console.log(tinderUser.hasOwnProperty('isloggedin'));  // imp
 
 
+
+// +++++++++++++++++++++ Object destructure +++++++++++++++++
+
+const course = {
+    course_name: "Javascript",
+    course_id: 45,
+    courseInstructor: "Prashant"
+}
+//console.log(course.courseInstructor)
+//console.log(course["courseInstructor"])
+
+const { courseInstructor: instructor} = course  // destructure means changing a name 
+console.log(instructor);
