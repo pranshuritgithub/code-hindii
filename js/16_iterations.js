@@ -45,13 +45,77 @@ for(let i=0; i<myArray.length; i++ )
 
 
 
+//   Break and Continue
+
 for(let i=0; i<=20; i++)
 {
      if(i == 5)
      {
-        console.log('Detected 5');
-        break
+       // console.log('Detected 5');
+        break                                   // break mtlb hota hai ki agrr ek baar detect hoo gyaa too aage execute nhi krega
      }
-     console.log(`value of index is ${i}`);
+     //console.log(`value of index is ${i}`);
      
 }
+
+for(let i=0; i<=20; i++)
+    {
+         if(i == 5)
+         {
+            //console.log('Detected 5');
+            continue                                  // continue mtlb hota hai ki agrr ek baar detect hoo gyaa too bhii aage process krega
+         }
+         //console.log(`value of index is ${i}`);
+         
+    }
+
+
+
+
+
+
+
+
+
+    // ++++++++++++++++++++ while do while loop +++++++++++++++
+
+    let index = 0
+    while(index <= 10)
+    {
+       // console.log(`Value of index is ${index}`);
+        index = index + 2
+    } 
+
+
+    let myArrays = ['flash', 'batman', 'spider-man']
+
+    let arr = 0      // arr is a variable
+
+    while(arr < myArrays.length)
+    {
+        console.log(`Value is ${myArrays[arr]}`);
+        arr++
+        
+    }
+
+
+  // +++++++++++ do while ++++++++
+
+    let score = 1
+
+    do{                                              // isma pehla kaam krta hai phir condition check krta hai
+        console.log(`value of score is ${score}`);
+        score++
+    } while(score <= 10)
+
+
+    
+
+        let scores = 11
+
+        do{
+            console.log(`value of score is ${score}`);
+            score++
+        } while(score <= 10)    
+
+
