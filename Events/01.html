@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body style="background-color:#414141; color:aliceblue;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="baloon" src="https://images.unsplash.com/photo-1727224279725-5cff726f41e3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+
+            <li><img width="200px" id="car" src="https://images.unsplash.com/photo-1726682577615-728e4272a60c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+
+            <li><img width="200px" id="sky" src="https://images.unsplash.com/photo-1725489891146-490f7962e499?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></li>
+
+            <li><img  width="200px" id="forest" src="https://images.unsplash.com/photo-1727799777485-4939c90326ad?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" onclick="alert('omg')"></li>
+
+            <li><a style="color:aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('forest').onclick = function() {
+    //     alert('owl clicked')
+    // }
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+
+    // document.getElementById('forest').addEventListener('click',function(){
+    //     alert("hmm")
+    // },false)
+
+
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     alert("click inside the ul");
+    // },false)
+
+    // document.getElementById('forest').addEventListener('click',function(e){
+    //     alert("owl clicked");
+    //     e.stopPropagation()
+    // },false)
+
+    document.getElementById('images').addEventListener('click',function(e){
+        alert("click inside the ul");
+    },true)
+
+    document.getElementById('forest').addEventListener('click',function(e){
+        alert("owl clicked");
+    },true)
+</script>
+</html>
